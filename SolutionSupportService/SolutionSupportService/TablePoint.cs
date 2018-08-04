@@ -5,8 +5,9 @@ using Xamarin.Forms;
 
 namespace SolutionSupportService
 {
-    public class TablePoint : Button
+    public class TablePoint
     {
+        public Button ButtonObject { get; set; }
         public long Time { get; set; }
     }
 }

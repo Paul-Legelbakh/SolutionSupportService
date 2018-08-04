@@ -23,7 +23,9 @@ namespace SolutionSupportService
             {
                 if (controlGrid.Children[i].GetType() == typeof(Button))
                 {
-                    points.Add(controlGrid.Children[i] as TablePoint);
+                    TablePoint tablePoint = new TablePoint();
+                    tablePoint.ButtonObject = controlGrid.Children[i] as Button;
+                    points.Add(tablePoint);
                 }
             }
             return points;
